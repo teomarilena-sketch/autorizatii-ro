@@ -3,7 +3,6 @@ import {
   Award,
   Flame,
   Fuel,
-  Leaf,
   ShieldAlert,
   Snowflake,
   TrainFront,
@@ -26,7 +25,7 @@ export type Service = {
 
 /**
  * Cele 8 servicii. Descrierile sunt redactate din surse publice despre fiecare
- * autoritate emitentă (AFER, IGPR, IGSU, ANRE, AGFR, RENAR, APM).
+ * autoritate emitentă (AFER, IGPR, IGSU, ANRE, AGFR, RENAR).
  */
 export const SERVICES: Service[] = [
   {
@@ -147,23 +146,6 @@ export const SERVICES: Service[] = [
       "Asistență la auditul de certificare",
     ],
     weeks: [8, 16],
-  },
-  {
-    id: "mediu",
-    slug: "consultanta-mediu",
-    icon: Leaf,
-    name: "Consultanță de mediu",
-    short: "Acord, autorizație și autorizație integrată de mediu",
-    description:
-      "Memorii de prezentare, studii de evaluare a impactului, acordul și autorizația de mediu (inclusiv autorizația integrată de mediu) și raportările periodice către APM și Garda de Mediu.",
-    authority: "Agenția pentru Protecția Mediului (APM / ANPM)",
-    legal: "OUG 195/2005 · Legea 292/2018",
-    deliverables: [
-      "Memoriu / studiu EIM",
-      "Dosar acord și autorizație de mediu",
-      "Plan de conformare și raportări",
-    ],
-    weeks: [10, 20],
   },
 ];
 

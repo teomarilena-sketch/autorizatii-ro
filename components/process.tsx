@@ -42,7 +42,7 @@ const STEPS: Step[] = [
     title: "Depunere & interfața cu autoritatea",
     short: "Săpt. 4–12",
     detail:
-      "Depunem dosarul la AFER, ANRE, IGPR, IGSU, AGFR sau APM, urmărim termenele legale, răspundem la solicitările de completare și te asistăm la audit sau la evaluarea tehnică.",
+      "Depunem dosarul la AFER, ANRE, IGPR, IGSU sau AGFR, urmărim termenele legale, răspundem la solicitările de completare și te asistăm la audit sau la evaluarea tehnică.",
     duration: "variabil",
   },
   {

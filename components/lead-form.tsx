@@ -34,7 +34,6 @@ const PROJECT_OPTIONS = [
   "Autorizație ANRE (gaze naturale)",
   "Certificare AGFR (gaze fluorurate)",
   "Certificări ISO",
-  "Consultanță de mediu",
   "Altele / nu sunt sigur",
 ];
 

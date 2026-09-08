@@ -16,7 +16,7 @@ import { Badge } from "@/components/ui/badge";
 import { DurationCalculator } from "@/components/duration-calculator";
 
 const METRICS = [
-  { value: "8", label: "Tipuri de autorizații și licențe" },
+  { value: "7", label: "Tipuri de autorizații și licențe" },
   { value: "24h", label: "Timp de răspuns la solicitare" },
   { value: "1", label: "Punct de contact pentru tot dosarul" },
 ];

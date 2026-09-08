@@ -13,7 +13,6 @@ const COLUMNS = [
       ["Autorizație ANRE (gaze naturale)", "#servicii"],
       ["Certificare AGFR (gaze fluorurate)", "#servicii"],
       ["Certificări ISO", "#servicii"],
-      ["Consultanță de mediu", "#servicii"],
     ],
   },
   {

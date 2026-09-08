@@ -2,7 +2,7 @@
 
 Landing page premium pentru **Autorizații.ro** — platformă digitală de consultanță
 pentru obținerea autorizațiilor și licențelor în domenii reglementate din România
-(AFER, IGPR, ISU, ANRE energie și gaze, AGFR, certificări ISO, mediu).
+(AFER, IGPR, ISU, ANRE energie și gaze, AGFR, certificări ISO).
 
 ## Stack
 
@@ -44,7 +44,7 @@ components/
   hero.tsx               # hero split + metrici + panou „status dosare” (exemplu)
   authorities-bar.tsx    # strip cu autoritățile emitente (AFER, ANRE, IGPR…)
   duration-calculator.tsx# modal interactiv „Calculează durata obținerii”
-  services.tsx           # grilă 8 servicii, card-uri cu detalii expandabile
+  services.tsx           # grilă 7 servicii, card-uri cu detalii expandabile
   expertise.tsx          # sectoare de clienți + model de lucru
   process.tsx            # timeline interactiv în 4 pași
   comparison.tsx         # tabel „fără asistență vs. cu Autorizații.ro”
@@ -55,7 +55,7 @@ components/
   motion/reveal.tsx      # reveal la scroll (CSS, cu fallback garantat)
 lib/
   site.ts           # date centralizate (nume, contact, meniu)
-  services.ts       # cele 8 servicii (autoritate, temei legal, livrabile)
+  services.ts       # cele 7 servicii (autoritate, temei legal, livrabile)
   utils.ts          # `cn()` (clsx + tailwind-merge)
 ```
 

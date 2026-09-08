@@ -14,7 +14,7 @@ export const site = {
   domain: "autorizații.ro",
   url: "https://xn--autorizaii-oyd.ro",
   description:
-    "Consultanță pentru obținerea autorizațiilor și licențelor în România: AFER, IGPR, ISU, ANRE (energie și gaze), AGFR, certificări ISO și consultanță de mediu. Proces digitalizat, un singur punct de contact.",
+    "Consultanță pentru obținerea autorizațiilor și licențelor în România: AFER, IGPR, ISU, ANRE (energie și gaze), AGFR și certificări ISO. Proces digitalizat, un singur punct de contact.",
 
   phone: "+40 3XX XXX XXX", // TODO: telefon real
   phoneHref: "tel:+403XXXXXXXX", // TODO

@@ -34,7 +34,7 @@ const SECTORS = [
   {
     icon: Factory,
     title: "Industrie & producție",
-    desc: "Unități industriale și logistice cu obligații de securitate la incendiu (ISU), autorizare de mediu și sisteme de management certificate ISO.",
+    desc: "Unități industriale și logistice cu obligații de securitate la incendiu (ISU) și sisteme de management certificate ISO.",
   },
   {
     icon: Snowflake,
@@ -83,7 +83,7 @@ export function Expertise() {
           description={
             <span className="text-white/70">
               Echipa are experiența necesară pentru a naviga eficient cerințele
-              AFER, ANRE, IGPR, IGSU, AGFR și APM, alături de proiectanți și
+              AFER, ANRE, IGPR, IGSU și AGFR, alături de proiectanți și
               verificatori atestați pentru fiecare specialitate.
             </span>
           }

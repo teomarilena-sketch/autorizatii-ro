@@ -16,7 +16,7 @@ export function Services() {
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="Servicii"
-          title="Opt tipuri de autorizații, un singur interlocutor"
+          title="Șapte tipuri de autorizații, un singur interlocutor"
           description="Întocmim și depunem dosarele de licențiere pentru societăți din domenii reglementate — soluții eficiente, adaptate specificului fiecărei activități."
         />
 
