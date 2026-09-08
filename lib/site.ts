@@ -9,8 +9,10 @@ export const site = {
   name: "Autorizații.ro",
   legalName: "TODO SRL", // TODO: denumirea firmei
   cui: "TODO", // TODO: CUI / nr. Reg. Com.
-  domain: "autorizatii.ro",
-  url: "https://autorizatii.ro",
+  // Domeniul principal e cu diacritică: autorizații.ro (punycode xn--autorizaii-oyd.ro).
+  // Folosim forma punycode în URL-uri pentru compatibilitate maximă cu crawlere/tooling.
+  domain: "autorizații.ro",
+  url: "https://xn--autorizaii-oyd.ro",
   description:
     "Consultanță pentru obținerea autorizațiilor și licențelor în România: AFER, IGPR, ISU, ANRE (energie și gaze), AGFR, certificări ISO și consultanță de mediu. Proces digitalizat, un singur punct de contact.",
 
