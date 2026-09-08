@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -89,6 +90,22 @@ export default function DesprePage() {
         description="Autorizații.ro este o platformă de consultanță pentru obținerea autorizațiilor și licențelor în domenii reglementate din România. Lucrăm cu proiectanți și verificatori atestați și gestionăm întregul proces — de la analiză până la menținerea conformității."
         crumbs={[{ label: "Acasă", href: "/" }, { label: "Despre" }]}
       />
+
+      <div className="bg-background pt-10">
+        <div className="mx-auto max-w-5xl px-5 lg:px-8">
+          <div className="relative aspect-[16/6] w-full overflow-hidden rounded-3xl border border-border">
+            <Image
+              src="/img/pagini-despre.jpg"
+              alt="Spațiu de birou modern"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 960px"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
+          </div>
+        </div>
+      </div>
 
       <section className="bg-background py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-5 lg:px-8">

@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { CtaBand } from "@/components/cta-band";
+import { ServiceImage } from "@/components/service-image";
 import { ButtonLink } from "@/components/ui/button";
 import { SERVICES, getService } from "@/lib/services";
 import { site } from "@/lib/site";
@@ -120,6 +121,18 @@ export default async function ServicePage({
           </div>
         </div>
       </PageHeader>
+
+      <div className="bg-background pt-10">
+        <div className="mx-auto max-w-5xl px-5 lg:px-8">
+          <ServiceImage
+            src={s.image || undefined}
+            alt={s.imageAlt}
+            icon={s.icon}
+            label={s.short}
+            priority
+          />
+        </div>
+      </div>
 
       <section className="bg-background py-16 sm:py-20">
         <div className="mx-auto grid max-w-5xl gap-12 px-5 lg:grid-cols-[1.5fr_1fr] lg:px-8">

@@ -111,8 +111,8 @@ export const SERVICES: Service[] = [
       "Atestate personal tehnic",
     ],
     weeks: [8, 16],
-    image: "/img/servicii/igpr.jpg",
-    imageAlt: "Centrală de alarmă antiefracție montată pe perete",
+    image: "",
+    imageAlt: "Sisteme de alarmare împotriva efracției",
     intro:
       "Proiectarea, instalarea, modificarea și întreținerea sistemelor de alarmare împotriva efracției se pot face numai de societăți licențiate de Inspectoratul General al Poliției Române. Pregătim dosarul de licențiere și atestarea personalului tehnic.",
     whoNeedsIt: [
@@ -158,8 +158,8 @@ export const SERVICES: Service[] = [
       "Reprezentare la ISU județean",
     ],
     weeks: [6, 12],
-    image: "/img/servicii/isu.jpg",
-    imageAlt: "Instalație de sprinklere pentru stingerea incendiilor",
+    image: "",
+    imageAlt: "Securitate la incendiu",
     intro:
       "Avizul de securitate la incendiu se obține înainte de construire sau amenajare, iar autorizația la finalizarea lucrărilor și înainte de punerea în funcțiune. Elaborăm scenariul de securitate la incendiu și gestionăm dosarul la Inspectoratul pentru Situații de Urgență.",
     whoNeedsIt: [
@@ -205,7 +205,7 @@ export const SERVICES: Service[] = [
     ],
     weeks: [6, 12],
     image: "/img/servicii/anre-electric.jpg",
-    imageAlt: "Tablou electric industrial cu cabluri și siguranțe",
+    imageAlt: "Tehnician lucrând la un tablou electric",
     intro:
       "Firmele care proiectează sau execută instalații electrice racordate la rețeaua de distribuție au nevoie de atestat ANRE, pe tipuri (A, B, C, D, E) în funcție de complexitatea lucrărilor. Pregătim dosarul de atestare și te asistăm la evaluare.",
     whoNeedsIt: [
@@ -251,7 +251,7 @@ export const SERVICES: Service[] = [
     ],
     weeks: [6, 12],
     image: "/img/servicii/anre-gaze.jpg",
-    imageAlt: "Conducte de gaze naturale și stație de reglare",
+    imageAlt: "Sudură la o conductă industrială",
     intro:
       "Proiectarea și execuția sistemelor de distribuție a gazelor naturale și a instalațiilor de utilizare se fac de operatori economici autorizați ANRE (tip PDS/EDS pentru distribuție, PIU/EIU pentru instalații de utilizare). Îți pregătim dosarul complet.",
     whoNeedsIt: [
@@ -296,8 +296,8 @@ export const SERVICES: Service[] = [
       "Registru echipamente și proceduri F-gaze",
     ],
     weeks: [4, 8],
-    image: "/img/servicii/agfr.jpg",
-    imageAlt: "Unități exterioare de climatizare și instalații HVAC",
+    image: "",
+    imageAlt: "Frig, climatizare și pompe de căldură",
     intro:
       "Orice lucrare la instalații de frig, climatizare sau pompe de căldură care conțin gaze fluorurate cu efect de seră se poate face numai de firme și persoane certificate, conform Regulamentului (UE) 517/2014. Îți obținem certificatul de firmă și certificăm personalul.",
     whoNeedsIt: [
