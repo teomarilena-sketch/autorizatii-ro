@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   authors: [{ name: site.name }],
   creator: site.name,
   verification: {
-    google: "Z7q3Ufx1I0MOmrBGMxDFRLbDOf-GjCDH2c8rMnEKQ5I",
+    google: "RwexBui29hGMF4XUTMk_RxKN9sBHI9cKQuFgV9pxZmA",
   },
   openGraph: {
     type: "website",
