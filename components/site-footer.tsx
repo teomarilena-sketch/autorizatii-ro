@@ -1,37 +1,27 @@
+import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { BrandMark, Wordmark } from "@/components/brand-mark";
+import { BrandMark } from "@/components/brand-mark";
 import { site } from "@/lib/site";
+import { SERVICES } from "@/lib/services";
+import { LEGAL_LINKS } from "@/lib/legal";
 
 const COLUMNS = [
   {
     title: "Servicii",
-    links: [
-      ["Autorizație AFER (feroviar)", "#servicii"],
-      ["Licență IGPR (alarme)", "#servicii"],
-      ["Autorizație ISU (incendiu)", "#servicii"],
-      ["Atestat ANRE (energie electrică)", "#servicii"],
-      ["Autorizație ANRE (gaze naturale)", "#servicii"],
-      ["Certificare AGFR (gaze fluorurate)", "#servicii"],
-      ["Certificări ISO", "#servicii"],
-    ],
+    links: SERVICES.map((s) => [s.cardTitle, `/servicii/${s.slug}`] as const),
   },
   {
     title: "Companie",
     links: [
-      ["Despre noi", "#despre"],
-      ["Procesul nostru", "#proces"],
-      ["Expertiză", "#expertiza"],
-      ["Contact", "#contact"],
-    ],
+      ["Despre noi", "/despre"],
+      ["Procesul nostru", "/proces"],
+      ["Blog", "/blog"],
+      ["Contact", "/contact"],
+    ] as const,
   },
   {
     title: "Legal",
-    links: [
-      ["Termeni și condiții", "#"],
-      ["Politica de confidențialitate", "#"],
-      ["Politica de cookie-uri", "#"],
-      ["GDPR", "#"],
-    ],
+    links: LEGAL_LINKS.map((l) => [l.label, l.href] as const),
   },
 ];
 
@@ -41,31 +31,31 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-5 py-16 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <div className="flex items-center gap-2.5">
+            <Link href="/" className="flex items-center gap-2.5">
               <BrandMark />
               <span className="font-display text-lg font-extrabold text-white">
                 Autorizații<span className="text-primary">.ro</span>
               </span>
-            </div>
+            </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
-              Platformă digitală de consultanță pentru obținerea avizelor și
-              autorizațiilor tehnice și juridice în România.
+              Consultanță pentru obținerea autorizațiilor și licențelor în
+              domenii reglementate din România.
             </p>
 
             <div className="mt-6 space-y-2 text-sm text-white/70">
-              <a
-                href={site.phoneHref}
-                className="flex items-center gap-2 hover:text-white"
-              >
-                <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
-                {site.phone}
-              </a>
               <a
                 href={site.emailHref}
                 className="flex items-center gap-2 hover:text-white"
               >
                 <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
                 {site.email}
+              </a>
+              <a
+                href={site.phoneHref}
+                className="flex items-center gap-2 hover:text-white"
+              >
+                <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
+                {site.phone}
               </a>
               <span className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" aria-hidden="true" />
@@ -81,13 +71,13 @@ export function SiteFooter() {
               </h4>
               <ul className="mt-4 space-y-2.5">
                 {col.links.map(([label, href]) => (
-                  <li key={label}>
-                    <a
+                  <li key={href}>
+                    <Link
                       href={href}
                       className="text-sm text-white/70 transition-colors hover:text-white"
                     >
                       {label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

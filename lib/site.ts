@@ -24,10 +24,10 @@ export const site = {
   schedule: "Luni–Vineri, 09:00–18:00",
 
   nav: [
-    { label: "Servicii", href: "#servicii" },
-    { label: "Proces", href: "#proces" },
-    { label: "Expertiză", href: "#expertiza" },
-    { label: "Despre", href: "#despre" },
-    { label: "Contact", href: "#contact" },
+    { label: "Servicii", href: "/servicii" },
+    { label: "Proces", href: "/proces" },
+    { label: "Despre", href: "/despre" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/contact" },
   ],
 } as const;

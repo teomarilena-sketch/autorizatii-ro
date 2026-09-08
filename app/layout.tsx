@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
+import { CookieBanner } from "@/components/cookie-banner";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -94,7 +97,10 @@ export default function RootLayout({
           >
             Sari la conținut
           </a>
+          <SiteHeader />
           {children}
+          <SiteFooter />
+          <CookieBanner />
         </ThemeProvider>
         <Analytics />
         <script

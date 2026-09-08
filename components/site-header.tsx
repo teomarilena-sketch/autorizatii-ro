@@ -1,23 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Menu, Phone, Sparkles, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ButtonLink } from "@/components/ui/button";
 import { BrandMark, Wordmark } from "@/components/brand-mark";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
-function scrollToId(id: string) {
-  document
-    .getElementById(id)
-    ?.scrollIntoView({ behavior: "smooth", block: "start" });
-}
-
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -33,25 +30,29 @@ export function SiteHeader() {
     };
   }, [open]);
 
+  useEffect(() => setOpen(false), [pathname]);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
+
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       {/* Announcement pill */}
       <div className="hidden justify-center px-4 pt-3 md:flex">
-        <button
-          type="button"
-          onClick={() => scrollToId("contact")}
+        <Link
+          href="/contact"
           className="glass flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium text-muted shadow-soft transition-colors hover:text-foreground"
         >
           <Sparkles className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
           Prima analiză de eligibilitate este gratuită — răspuns în 24h
           <ArrowRight className="h-3 w-3" aria-hidden="true" />
-        </button>
+        </Link>
       </div>
 
       <div className="px-4 pt-3 md:pt-2">
@@ -63,20 +64,24 @@ export function SiteHeader() {
               : "border border-transparent bg-card/40 backdrop-blur-sm",
           )}
         >
-          <a href="#" className="flex items-center gap-2.5" aria-label={site.name}>
+          <Link href="/" className="flex items-center gap-2.5" aria-label={site.name}>
             <BrandMark />
             <Wordmark />
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Principal">
             {site.nav.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-xl px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-foreground/5 hover:text-foreground"
+                aria-current={isActive(item.href) ? "page" : undefined}
+                className={cn(
+                  "rounded-xl px-3 py-2 text-sm font-medium transition-colors hover:bg-foreground/5 hover:text-foreground",
+                  isActive(item.href) ? "text-foreground" : "text-muted",
+                )}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -89,10 +94,10 @@ export function SiteHeader() {
               <Phone className="h-4 w-4" aria-hidden="true" />
               {site.phone}
             </a>
-            <Button variant="primary" size="md" onClick={() => scrollToId("contact")}>
+            <ButtonLink href="/contact" variant="primary" size="md">
               Cere Ofertă Rapidă
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Button>
+            </ButtonLink>
           </div>
 
           <div className="flex items-center gap-2 lg:hidden">
@@ -134,10 +139,14 @@ export function SiteHeader() {
               aria-label="Meniu de navigare"
             >
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2.5">
+                <Link
+                  href="/"
+                  onClick={() => setOpen(false)}
+                  className="flex items-center gap-2.5"
+                >
                   <BrandMark />
                   <Wordmark />
-                </div>
+                </Link>
                 <button
                   type="button"
                   onClick={() => setOpen(false)}
@@ -150,14 +159,14 @@ export function SiteHeader() {
 
               <nav className="mt-6 flex flex-col gap-1" aria-label="Mobil">
                 {site.nav.map((item) => (
-                  <a
+                  <Link
                     key={item.href}
                     href={item.href}
                     onClick={() => setOpen(false)}
                     className="rounded-xl px-3 py-3 text-base font-medium text-foreground transition-colors hover:bg-surface"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
               </nav>
 
@@ -169,17 +178,15 @@ export function SiteHeader() {
                   <Phone className="h-4 w-4" aria-hidden="true" />
                   {site.phone}
                 </a>
-                <Button
+                <ButtonLink
+                  href="/contact"
                   variant="primary"
                   size="lg"
-                  onClick={() => {
-                    setOpen(false);
-                    scrollToId("contact");
-                  }}
+                  onClick={() => setOpen(false)}
                 >
                   Cere Ofertă Rapidă
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                </Button>
+                </ButtonLink>
               </div>
             </motion.div>
           </motion.div>
