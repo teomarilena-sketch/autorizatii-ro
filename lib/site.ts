@@ -18,8 +18,8 @@ export const site = {
 
   phone: "+40 3XX XXX XXX", // TODO: telefon real
   phoneHref: "tel:+403XXXXXXXX", // TODO
-  email: "contact@autorizatii.ro", // TODO: email real
-  emailHref: "mailto:contact@autorizatii.ro", // TODO
+  email: "contact@autorizatii.ro",
+  emailHref: "mailto:contact@autorizatii.ro",
   address: "București, România", // TODO: adresă completă
   schedule: "Luni–Vineri, 09:00–18:00",
 

@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   Loader2,
   Lock,
+  Mail,
   Phone,
   ShieldCheck,
   Sparkles,
@@ -148,17 +149,22 @@ export function LeadForm() {
             </Reveal>
 
             <Reveal delay={0.12}>
-              <div className="mt-8 flex flex-col gap-2 rounded-2xl bg-surface p-4 text-sm">
+              <div className="mt-8 flex flex-col gap-2.5 rounded-2xl bg-surface p-4 text-sm">
+                <a
+                  href={site.emailHref}
+                  className="inline-flex items-center gap-2 font-semibold text-foreground hover:text-primary"
+                >
+                  <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
+                  {site.email}
+                </a>
                 <a
                   href={site.phoneHref}
                   className="inline-flex items-center gap-2 font-semibold text-foreground hover:text-primary"
                 >
-                  <Phone className="h-4 w-4" aria-hidden="true" />
+                  <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
                   {site.phone}
                 </a>
-                <span className="text-muted">
-                  Program: Luni–Vineri, 09:00–18:00
-                </span>
+                <span className="text-muted">Program: {site.schedule}</span>
               </div>
             </Reveal>
           </div>
