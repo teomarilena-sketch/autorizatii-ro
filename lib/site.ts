@@ -20,6 +20,8 @@ export const site = {
   phoneHref: "tel:+40741442294",
   email: "contact@autorizatii.ro",
   emailHref: "mailto:contact@autorizatii.ro",
+  emailAlt: "contactmtmconsulting@gmail.com",
+  emailAltHref: "mailto:contactmtmconsulting@gmail.com",
   address: "București, România", // TODO: adresă completă
   schedule: "Luni–Vineri, 09:00–18:00",
 

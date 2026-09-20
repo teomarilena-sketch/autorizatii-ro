@@ -159,6 +159,12 @@ export function LeadForm() {
                   {site.email}
                 </a>
                 <a
+                  href={site.emailAltHref}
+                  className="inline-flex items-center gap-2 pl-6 text-xs font-medium text-muted hover:text-primary"
+                >
+                  {site.emailAlt}
+                </a>
+                <a
                   href={site.phoneHref}
                   className="inline-flex items-center gap-2 font-semibold text-foreground hover:text-primary"
                 >

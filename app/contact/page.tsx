@@ -11,11 +11,32 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
 };
 
-const DETAILS = [
-  { icon: Mail, label: "Email", value: site.email, href: site.emailHref },
-  { icon: Phone, label: "Telefon", value: site.phone, href: site.phoneHref },
-  { icon: Clock, label: "Program", value: site.schedule },
-  { icon: MapPin, label: "Zonă acoperită", value: "România — la nivel național" },
+type DetailValue = { value: string; href?: string };
+
+const DETAILS: { icon: typeof Mail; label: string; values: DetailValue[] }[] = [
+  {
+    icon: Mail,
+    label: "Email",
+    values: [
+      { value: site.email, href: site.emailHref },
+      { value: site.emailAlt, href: site.emailAltHref },
+    ],
+  },
+  {
+    icon: Phone,
+    label: "Telefon",
+    values: [{ value: site.phone, href: site.phoneHref }],
+  },
+  {
+    icon: Clock,
+    label: "Program",
+    values: [{ value: site.schedule }],
+  },
+  {
+    icon: MapPin,
+    label: "Zonă acoperită",
+    values: [{ value: "România — la nivel național" }],
+  },
 ];
 
 export default function ContactPage() {
@@ -37,18 +58,23 @@ export default function ContactPage() {
               <div className="mt-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                 {d.label}
               </div>
-              {d.href ? (
-                <a
-                  href={d.href}
-                  className="mt-0.5 block text-sm font-semibold text-foreground hover:text-primary"
-                >
-                  {d.value}
-                </a>
-              ) : (
-                <div className="mt-0.5 text-sm font-semibold text-foreground">
-                  {d.value}
-                </div>
-              )}
+              <div className="mt-0.5 space-y-0.5">
+                {d.values.map((v) =>
+                  v.href ? (
+                    <a
+                      key={v.value}
+                      href={v.href}
+                      className="block text-sm font-semibold text-foreground hover:text-primary"
+                    >
+                      {v.value}
+                    </a>
+                  ) : (
+                    <div key={v.value} className="text-sm font-semibold text-foreground">
+                      {v.value}
+                    </div>
+                  ),
+                )}
+              </div>
             </div>
           ))}
         </div>
