@@ -63,6 +63,14 @@
     html {
       scroll-behavior: auto;
     }
+
+    .animate-letter-in,
+    .animate-stamp-in,
+    .animate-brand-scan {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
   }
 }
 

@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Menu, Phone, Sparkles, X } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button";
 import { BrandMark, Wordmark } from "@/components/brand-mark";
+import { AnimatedBrandMark } from "@/components/brand-mark-motion";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -64,9 +65,8 @@ export function SiteHeader() {
               : "border border-transparent bg-card/40 backdrop-blur-sm",
           )}
         >
-          <Link href="/" className="flex items-center gap-2.5" aria-label={site.name}>
-            <BrandMark />
-            <Wordmark />
+          <Link href="/" className="flex items-center" aria-label="MTM Autorizații">
+            <AnimatedBrandMark />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Principal">

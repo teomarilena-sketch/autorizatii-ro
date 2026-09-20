@@ -60,9 +60,28 @@ const config: Config = {
         shimmer: {
           "100%": { transform: "translateX(100%)" },
         },
+        "letter-in": {
+          "0%": { opacity: "0", transform: "translateY(7px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "stamp-in": {
+          "0%": { opacity: "0", transform: "scale(0.4) rotate(-14deg)" },
+          "55%": { opacity: "1", transform: "scale(1.15) rotate(4deg)" },
+          "75%": { opacity: "1", transform: "scale(0.94) rotate(-2deg)" },
+          "100%": { opacity: "1", transform: "scale(1) rotate(0deg)" },
+        },
+        "brand-scan": {
+          "0%": { left: "-6%", opacity: "0" },
+          "8%": { opacity: "1" },
+          "85%": { opacity: "1" },
+          "100%": { left: "104%", opacity: "0" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.6s ease-out both",
+        "letter-in": "letter-in 0.4s cubic-bezier(0.16,1,0.3,1) both",
+        "stamp-in": "stamp-in 0.5s ease-out both",
+        "brand-scan": "brand-scan 0.7s ease-in-out both",
       },
     },
   },
