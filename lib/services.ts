@@ -40,7 +40,7 @@ export type Service = {
 
 /**
  * Cele 8 servicii. Descrierile sunt redactate din surse publice despre fiecare
- * autoritate emitentă (AFER, IGPR, IGSU, ANRE, AGFR, RENAR, ISCIR).
+ * autoritate emitentă (AFER, IGPR, IGSU, ANRE, AGFR, ISO, ISCIR).
  */
 export const SERVICES: Service[] = [
   {
@@ -334,8 +334,8 @@ export const SERVICES: Service[] = [
     cardTitle: "Certificări ISO",
     short: "ISO 9001, 14001, 45001, 27001, 50001",
     description:
-      "Implementarea și certificarea sistemelor de management: calitate (9001), mediu (14001), sănătate și securitate ocupațională (45001), securitatea informației (27001) și energie (50001), prin organisme acreditate RENAR.",
-    authority: "Organisme de certificare acreditate RENAR",
+      "Implementarea și certificarea sistemelor de management: calitate (9001), mediu (14001), sănătate și securitate ocupațională (45001), securitatea informației (27001) și energie (50001), prin organisme acreditate ISO.",
+    authority: "Organisme de certificare acreditate ISO",
     legal: "Standarde ISO / IAF",
     deliverables: [
       "Analiză de conformitate (gap analysis)",
@@ -346,7 +346,7 @@ export const SERVICES: Service[] = [
     image: "/img/servicii/iso.jpg",
     imageAlt: "Ședință de audit — documente și laptop pe masă",
     intro:
-      "Certificările ISO sunt cerute frecvent la licitații, în relația cu clienți mari sau ca pre-condiție pentru alte autorizări (AFER, ANRE). Implementăm sistemul de management adaptat firmei tale și te ducem până la certificarea de către un organism acreditat RENAR.",
+      "Certificările ISO sunt cerute frecvent la licitații, în relația cu clienți mari sau ca pre-condiție pentru alte autorizări (AFER, ANRE). Implementăm sistemul de management adaptat firmei tale și te ducem până la certificarea de către un organism acreditat ISO.",
     whoNeedsIt: [
       "Firme care participă la licitații publice sau private cu cerință de certificare ISO",
       "Furnizori care trebuie să demonstreze un sistem de management față de clienți mari",
@@ -365,12 +365,12 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Certificatul este recunoscut internațional?",
-        a: "Da, dacă este emis de un organism acreditat (RENAR în România sau alt membru IAF). Lucrăm doar cu organisme acreditate, pentru ca certificatul să fie acceptat la licitații și de clienți externi.",
+        a: "Da, dacă este emis de un organism de certificare acreditat ISO. Lucrăm doar cu organisme acreditate, pentru ca certificatul să fie acceptat la licitații și de clienți externi.",
       },
     ],
     seoTitle: "Certificări ISO 9001, 14001, 45001 — implementare și audit de certificare",
     seoDescription:
-      "Implementare și certificare ISO (9001, 14001, 45001, 27001, 50001) prin organisme acreditate RENAR: gap analysis, proceduri, instruire, asistență la audit.",
+      "Implementare și certificare ISO (9001, 14001, 45001, 27001, 50001) prin organisme acreditate ISO: gap analysis, proceduri, instruire, asistență la audit.",
   },
   {
     id: "iscir",
