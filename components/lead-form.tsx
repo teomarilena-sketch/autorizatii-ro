@@ -153,22 +153,22 @@ export function LeadForm() {
               <div className="mt-8 flex flex-col gap-2.5 rounded-2xl bg-surface p-4 text-sm">
                 <a
                   href={site.emailHref}
-                  className="inline-flex items-center gap-2 font-semibold text-foreground hover:text-primary"
+                  className="flex items-start gap-2 font-semibold text-foreground hover:text-primary"
                 >
-                  <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
-                  {site.email}
+                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                  <span className="break-all">{site.email}</span>
                 </a>
                 <a
                   href={site.emailAltHref}
-                  className="inline-flex items-center gap-2 pl-6 text-xs font-medium text-muted hover:text-primary"
+                  className="block break-all pl-6 text-xs font-medium text-muted hover:text-primary"
                 >
                   {site.emailAlt}
                 </a>
                 <a
                   href={site.phoneHref}
-                  className="inline-flex items-center gap-2 font-semibold text-foreground hover:text-primary"
+                  className="flex items-center gap-2 font-semibold text-foreground hover:text-primary"
                 >
-                  <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
+                  <Phone className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
                   {site.phone}
                 </a>
                 <span className="text-muted">Program: {site.schedule}</span>

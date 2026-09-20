@@ -25,7 +25,10 @@ const DETAILS: { icon: typeof Mail; label: string; values: DetailValue[] }[] = [
   {
     icon: Phone,
     label: "Telefon",
-    values: [{ value: site.phone, href: site.phoneHref }],
+    values: [
+      { value: site.phone, href: site.phoneHref },
+      { value: site.phoneAlt, href: site.phoneAltHref },
+    ],
   },
   {
     icon: Clock,
@@ -52,7 +55,7 @@ export default function ContactPage() {
           {DETAILS.map((d) => (
             <div
               key={d.label}
-              className="rounded-2xl border border-border bg-card p-4"
+              className="min-w-0 rounded-2xl border border-border bg-card p-4"
             >
               <d.icon className="h-4 w-4 text-primary" aria-hidden="true" />
               <div className="mt-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
@@ -64,12 +67,12 @@ export default function ContactPage() {
                     <a
                       key={v.value}
                       href={v.href}
-                      className="block text-sm font-semibold text-foreground hover:text-primary"
+                      className="block break-words text-sm font-semibold text-foreground hover:text-primary"
                     >
                       {v.value}
                     </a>
                   ) : (
-                    <div key={v.value} className="text-sm font-semibold text-foreground">
+                    <div key={v.value} className="break-words text-sm font-semibold text-foreground">
                       {v.value}
                     </div>
                   ),

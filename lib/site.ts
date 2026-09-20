@@ -18,6 +18,9 @@ export const site = {
 
   phone: "+40 741 442 294",
   phoneHref: "tel:+40741442294",
+  // Vizibil doar pe /contact (nu pe homepage) — vezi app/contact/page.tsx.
+  phoneAlt: "+40 727 070 777",
+  phoneAltHref: "tel:+40727070777",
   email: "contact@autorizatii.ro",
   emailHref: "mailto:contact@autorizatii.ro",
   emailAlt: "contactmtmconsulting@gmail.com",
