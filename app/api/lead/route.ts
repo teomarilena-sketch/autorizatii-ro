@@ -59,29 +59,43 @@ export async function POST(request: Request) {
     source: "autorizatii.ro/landing",
   };
 
-  /**
-   * INTEGRARE:
-   * Conectează aici serviciul dorit (unul sau mai multe):
-   *  - Email transacțional: Resend / SendGrid / Postmark
-   *  - CRM: HubSpot / Pipedrive / Notion
-   *  - Notificări: Slack / Telegram webhook
-   *
-   * Exemplu (Resend):
-   *   await fetch("https://api.resend.com/emails", {
-   *     method: "POST",
-   *     headers: {
-   *       Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-   *       "Content-Type": "application/json",
-   *     },
-   *     body: JSON.stringify({
-   *       from: "lead@autorizatii.ro",
-   *       to: "contact@autorizații.ro",
-   *       subject: `Lead nou — ${lead.projectType}`,
-   *       text: JSON.stringify(lead, null, 2),
-   *     }),
-   *   });
-   */
   console.log("[lead:autorizatii.ro]", lead);
+
+  // Notificare pe email (Brevo) — nu blocăm răspunsul către vizitator dacă
+  // trimiterea eșuează; lead-ul rămâne oricum în log.
+  const apiKey = process.env.BREVO_API_KEY;
+  if (apiKey) {
+    try {
+      const res = await fetch("https://api.brevo.com/v3/smtp/email", {
+        method: "POST",
+        headers: {
+          accept: "application/json",
+          "content-type": "application/json",
+          "api-key": apiKey,
+        },
+        body: JSON.stringify({
+          sender: { name: "Autorizații.ro — Formular site", email: "contact@autorizatii.ro" },
+          to: [{ email: "contactmtmconsulting@gmail.com", name: "MTM Consulting" }],
+          replyTo: { email: lead.email, name: lead.name },
+          subject: `Lead nou — ${lead.projectType}`,
+          textContent:
+            `Nume: ${lead.name}\n` +
+            `Telefon: ${lead.phone}\n` +
+            `Email: ${lead.email}\n` +
+            `Tip proiect: ${lead.projectType}\n\n` +
+            `Mesaj:\n${lead.message}\n\n` +
+            `Primit: ${lead.receivedAt}`,
+        }),
+      });
+      if (!res.ok) {
+        console.error("[lead:brevo] send failed", res.status, await res.text());
+      }
+    } catch (err) {
+      console.error("[lead:brevo] send error", err);
+    }
+  } else {
+    console.warn("[lead:brevo] BREVO_API_KEY missing — email notification skipped");
+  }
 
   return NextResponse.json({ ok: true });
 }
