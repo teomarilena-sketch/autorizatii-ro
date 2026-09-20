@@ -36,6 +36,7 @@ const PROJECT_OPTIONS = [
   "Certificare AGFR (gaze fluorurate)",
   "Certificări ISO",
   "Autorizații ISCIR",
+  "Cursuri de calificare",
   "Altele / nu sunt sigur",
 ];
 
