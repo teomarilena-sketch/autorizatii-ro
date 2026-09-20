@@ -39,7 +39,7 @@ export function AnimatedBrandMark({ className }: { className?: string }) {
   return (
     <span
       ref={ref}
-      className={cn("relative inline-flex items-center gap-2.5", className)}
+      className={cn("relative inline-flex items-center gap-3", className)}
     >
       <span
         aria-hidden="true"
@@ -48,7 +48,7 @@ export function AnimatedBrandMark({ className }: { className?: string }) {
 
       <SealIcon />
 
-      <span className="font-display text-lg leading-none tracking-tight">
+      <span className="font-display text-2xl leading-none tracking-tight">
         <span className="inline-flex">
           {MTM.map((ch, i) => (
             <span
@@ -80,7 +80,7 @@ function SealIcon() {
   return (
     <svg
       viewBox="0 0 32 32"
-      className="fx animate-stamp-in h-8 w-8 shrink-0"
+      className="fx animate-stamp-in h-11 w-11 shrink-0"
       style={{ animationDelay: "1500ms" }}
       aria-hidden="true"
     >
