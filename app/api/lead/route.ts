@@ -74,7 +74,8 @@ export async function POST(request: Request) {
           "api-key": apiKey,
         },
         body: JSON.stringify({
-          sender: { name: "Autorizații.ro — Formular site", email: "contact@autorizatii.ro" },
+          // Domeniu autentificat (SPF/DKIM/DMARC) în Brevo — vezi lib/site.ts.
+          sender: { name: "Autorizații.ro — Formular site", email: "contact@xn--autorizaii-oyd.ro" },
           to: [{ email: "contactmtmconsulting@gmail.com", name: "MTM Consulting" }],
           replyTo: { email: lead.email, name: lead.name },
           subject: `Lead nou — ${lead.projectType}`,
