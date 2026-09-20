@@ -196,11 +196,12 @@ export const SERVICES: Service[] = [
     cardTitle: "Atestat ANRE electric",
     short: "Proiectare și executare instalații electrice",
     description:
-      "Atestatul ANRE pentru proiectarea și/sau executarea instalațiilor electrice — de la instalații de utilizare până la linii și posturi de transformare de medie tensiune (până la 20 kV).",
+      "Atestatul ANRE pentru firmă — proiectarea și/sau executarea instalațiilor electrice, de la instalații de utilizare până la linii și posturi de transformare de medie tensiune (până la 20 kV) — și autorizarea individuală a electricienilor ANRE.",
     authority: "Autoritatea Națională de Reglementare în domeniul Energiei (ANRE)",
     legal: "Legea 123/2012 · Regulament ANRE",
     deliverables: [
-      "Dosar de atestare (tip A / B / C / D / E)",
+      "Dosar de atestare firmă (tip A / B / C / D / E)",
+      "Autorizare individuală electricieni ANRE",
       "Documentație personal calificat și dotări",
       "Asistență la evaluarea ANRE",
     ],
@@ -208,11 +209,12 @@ export const SERVICES: Service[] = [
     image: "/img/servicii/anre-electric.jpg",
     imageAlt: "Tehnician lucrând la un tablou electric",
     intro:
-      "Firmele care proiectează sau execută instalații electrice racordate la rețeaua de distribuție au nevoie de atestat ANRE, pe tipuri (A, B, C, D, E) în funcție de complexitatea lucrărilor. Pregătim dosarul de atestare și te asistăm la evaluare.",
+      "Firmele care proiectează sau execută instalații electrice racordate la rețeaua de distribuție au nevoie de atestat ANRE, pe tipuri (A, B, C, D, E) în funcție de complexitatea lucrărilor. Pe lângă atestarea firmei, autorizăm individual și electricienii care execută lucrările. Pregătim dosarul de atestare și te asistăm la evaluare.",
     whoNeedsIt: [
       "Firme de instalații electrice care execută branșamente și instalații de utilizare",
       "Proiectanți de instalații electrice de joasă și medie tensiune",
       "Constructori care vor să presteze lucrări electrice cu forțe proprii",
+      "Electricieni care au nevoie de autorizare ANRE individuală",
     ],
     documents: [
       "Certificat constatator ONRC cu activitatea de instalații electrice",
@@ -230,9 +232,9 @@ export const SERVICES: Service[] = [
         a: "Da, ANRE cere ca electricienii autorizați să aibă contract de muncă cu firma solicitantă. Te ajutăm și cu autorizarea individuală a electricienilor, dacă e nevoie.",
       },
     ],
-    seoTitle: "Atestat ANRE energie electrică — proiectare și execuție instalații electrice",
+    seoTitle: "Atestat ANRE energie electrică — firmă și autorizare individuală electricieni",
     seoDescription:
-      "Obținerea atestatului ANRE pentru instalații electrice (tip A–E): dosar de atestare, documentație personal și dotări, asistență la evaluarea ANRE.",
+      "Atestat ANRE pentru firmă (tip A–E) și autorizare individuală a electricienilor: dosar de atestare, documentație personal și dotări, asistență la evaluarea ANRE.",
   },
   {
     id: "anre-gaze",
@@ -242,11 +244,12 @@ export const SERVICES: Service[] = [
     cardTitle: "Autorizație ANRE gaze",
     short: "Proiectare și execuție sisteme de gaze naturale",
     description:
-      "Autorizația ANRE pentru proiectarea și execuția sistemelor de distribuție și a instalațiilor de utilizare a gazelor naturale (tip PDS/EDS și PIU/EIU).",
+      "Autorizația ANRE pentru firmă — proiectarea și execuția sistemelor de distribuție și a instalațiilor de utilizare a gazelor naturale (tip PDS/EDS și PIU/EIU) — și autorizarea individuală a instalatorilor de gaze naturale.",
     authority: "Autoritatea Națională de Reglementare în domeniul Energiei (ANRE)",
     legal: "Legea 123/2012 · Regulament ANRE",
     deliverables: [
-      "Dosar de autorizare gaze naturale",
+      "Dosar de autorizare gaze naturale (firmă)",
+      "Autorizare individuală instalatori de gaze ANRE",
       "Documentație instalatori autorizați",
       "Asistență la evaluarea ANRE",
     ],
@@ -254,11 +257,12 @@ export const SERVICES: Service[] = [
     image: "/img/servicii/anre-gaze.jpg",
     imageAlt: "Sudură la o conductă industrială",
     intro:
-      "Proiectarea și execuția sistemelor de distribuție a gazelor naturale și a instalațiilor de utilizare se fac de operatori economici autorizați ANRE (tip PDS/EDS pentru distribuție, PIU/EIU pentru instalații de utilizare). Îți pregătim dosarul complet.",
+      "Proiectarea și execuția sistemelor de distribuție a gazelor naturale și a instalațiilor de utilizare se fac de operatori economici autorizați ANRE (tip PDS/EDS pentru distribuție, PIU/EIU pentru instalații de utilizare). Pe lângă autorizarea firmei, autorizăm individual și instalatorii de gaze naturale. Îți pregătim dosarul complet.",
     whoNeedsIt: [
       "Firme de instalații termice și de gaze care execută instalații de utilizare",
       "Proiectanți de sisteme de distribuție și instalații de gaze naturale",
       "Constructori de rețele de distribuție pentru operatorii de distribuție",
+      "Instalatori care au nevoie de autorizare ANRE individuală",
     ],
     documents: [
       "Certificat constatator ONRC cu activitatea de instalații de gaze",
@@ -276,9 +280,9 @@ export const SERVICES: Service[] = [
         a: "Da, legitimațiile de instalator autorizat ANRE au valabilitate limitată și se prelungesc. Îți urmărim termenele pentru firmă și pentru fiecare instalator.",
       },
     ],
-    seoTitle: "Autorizație ANRE gaze naturale — proiectare și execuție sisteme de gaze",
+    seoTitle: "Autorizație ANRE gaze naturale — firmă și autorizare individuală instalatori",
     seoDescription:
-      "Obținerea autorizației ANRE pentru gaze naturale (PDS/EDS, PIU/EIU): dosar de autorizare, documentație instalatori autorizați, asistență la evaluare.",
+      "Autorizație ANRE gaze naturale pentru firmă (PDS/EDS, PIU/EIU) și autorizare individuală a instalatorilor: dosar de autorizare, documentație, asistență la evaluare.",
   },
   {
     id: "agfr",
