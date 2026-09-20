@@ -61,9 +61,6 @@ export async function POST(request: Request) {
 
   console.log("[lead:autorizatii.ro]", lead);
 
-  // DEBUG TEMPORAR — diagnostic direct în răspuns, se elimină după depanare.
-  const debug: Record<string, unknown> = { hasKey: !!process.env.BREVO_API_KEY };
-
   // Notificare pe email (Brevo) — nu blocăm răspunsul către vizitator dacă
   // trimiterea eșuează; lead-ul rămâne oricum în log.
   const apiKey = process.env.BREVO_API_KEY;
@@ -91,13 +88,15 @@ export async function POST(request: Request) {
             `Primit: ${lead.receivedAt}`,
         }),
       });
-      debug.brevoStatus = res.status;
-      debug.brevoOk = res.ok;
-      debug.brevoBody = await res.text();
+      if (!res.ok) {
+        console.error("[lead:brevo] send failed", res.status, await res.text());
+      }
     } catch (err) {
-      debug.brevoError = err instanceof Error ? err.message : String(err);
+      console.error("[lead:brevo] send error", err);
     }
+  } else {
+    console.warn("[lead:brevo] BREVO_API_KEY missing — email notification skipped");
   }
 
-  return NextResponse.json({ ok: true, debug });
+  return NextResponse.json({ ok: true });
 }
