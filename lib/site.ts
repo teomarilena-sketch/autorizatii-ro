@@ -30,6 +30,7 @@ export const site = {
 
   nav: [
     { label: "Servicii", href: "/servicii" },
+    { label: "Cursuri", href: "/cursuri" },
     { label: "Proces", href: "/proces" },
     { label: "Despre", href: "/despre" },
     { label: "Blog", href: "/blog" },

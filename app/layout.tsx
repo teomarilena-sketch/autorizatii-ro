@@ -48,6 +48,7 @@ export const metadata: Metadata = {
     "certificare AGFR gaze fluorurate",
     "autorizatie ISCIR cazane recipiente sub presiune",
     "certificari ISO",
+    "cursuri de calificare profesionala",
     "consultanta licentiere",
   ],
   authors: [{ name: site.name }],

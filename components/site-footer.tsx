@@ -13,6 +13,7 @@ const COLUMNS = [
   {
     title: "Companie",
     links: [
+      ["Cursuri de calificare", "/cursuri"],
       ["Despre noi", "/despre"],
       ["Procesul nostru", "/proces"],
       ["Blog", "/blog"],

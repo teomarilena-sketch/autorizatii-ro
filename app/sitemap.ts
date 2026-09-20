@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${base}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/servicii`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/cursuri`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/proces`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/despre`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
