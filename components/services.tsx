@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Landmark, Plus, ScrollText } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
 import { RevealStagger } from "@/components/motion/reveal";
+import { CoursesCategoryCard } from "@/components/courses-category-card";
 import { SERVICES } from "@/lib/services";
 import { cn } from "@/lib/utils";
 
@@ -103,6 +104,7 @@ export function Services() {
               </article>
             );
           })}
+          <CoursesCategoryCard />
         </RevealStagger>
       </div>
     </section>

@@ -4,6 +4,7 @@ import { ArrowRight, Clock, Landmark, ScrollText } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { CtaBand } from "@/components/cta-band";
 import { AuthoritiesBar } from "@/components/authorities-bar";
+import { CoursesCategoryCard } from "@/components/courses-category-card";
 import { SERVICES } from "@/lib/services";
 
 export const metadata: Metadata = {
@@ -61,6 +62,7 @@ export default function ServiciiPage() {
                 </span>
               </Link>
             ))}
+            <CoursesCategoryCard />
           </div>
 
           <p className="mt-8 flex items-center gap-2 text-sm text-muted">
