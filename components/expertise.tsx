@@ -83,7 +83,7 @@ export function Expertise() {
           description={
             <span className="text-white/70">
               Echipa are experiența necesară pentru a naviga eficient cerințele
-              AFER, ANRE, IGPR, IGSU și AGFR, alături de proiectanți și
+              AFER, ANRE, IGPR, IGSU, AGFR și ISCIR, alături de proiectanți și
               verificatori atestați pentru fiecare specialitate.
             </span>
           }

@@ -46,6 +46,7 @@ export const metadata: Metadata = {
     "atestat ANRE energie electrica",
     "autorizatie ANRE gaze naturale",
     "certificare AGFR gaze fluorurate",
+    "autorizatie ISCIR cazane recipiente sub presiune",
     "certificari ISO",
     "consultanta licentiere",
   ],

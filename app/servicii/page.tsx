@@ -9,7 +9,7 @@ import { SERVICES } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Servicii de licențiere și autorizare",
   description:
-    "Cele 7 tipuri de autorizații și licențe pentru care oferim consultanță: AFER, IGPR, ISU, ANRE energie electrică, ANRE gaze, AGFR și certificări ISO.",
+    "Cele 8 tipuri de autorizații și licențe pentru care oferim consultanță: AFER, IGPR, ISU, ANRE energie electrică, ANRE gaze, AGFR, ISCIR și certificări ISO.",
   alternates: { canonical: "/servicii" },
 };
 
@@ -18,7 +18,7 @@ export default function ServiciiPage() {
     <main>
       <PageHeader
         eyebrow="Servicii"
-        title="Șapte tipuri de autorizații, un singur interlocutor"
+        title="Opt tipuri de autorizații, un singur interlocutor"
         description="Întocmim și depunem dosarele de licențiere pentru societăți din domenii reglementate. Alege serviciul de care ai nevoie sau cere o analiză gratuită de eligibilitate."
         crumbs={[{ label: "Acasă", href: "/" }, { label: "Servicii" }]}
       />

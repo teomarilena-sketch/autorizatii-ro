@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: "Cât durează în total obținerea unei autorizații?",
-    a: "Depinde de tipul autorizației și de autoritate — de la 4–8 săptămâni (ex. certificare AGFR) până la 10–20 de săptămâni (ex. AFER sau autorizații de mediu). La analiza gratuită primești o estimare pe cazul tău.",
+    a: "Depinde de tipul autorizației și de autoritate — de la 4–8 săptămâni (ex. certificare AGFR) până la 10–20 de săptămâni (ex. AFER). La analiza gratuită primești o estimare pe cazul tău.",
   },
   {
     q: "Ce presupune analiza gratuită de eligibilitate?",

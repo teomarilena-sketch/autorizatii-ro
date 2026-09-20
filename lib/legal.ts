@@ -97,7 +97,7 @@ export const LEGAL: Record<string, LegalDoc> = {
       {
         ul: [
           "Proiectanți, verificatori și experți atestați implicați în dosarul tău, strict în acest scop",
-          "Autoritățile emitente (AFER, IGPR, IGSU, ANRE, AGFR etc.), pentru depunerea dosarului",
+          "Autoritățile emitente (AFER, IGPR, IGSU, ANRE, AGFR, ISCIR etc.), pentru depunerea dosarului",
           "Furnizori de servicii IT (găzduire, email, analytics), pe bază de contract și garanții adecvate",
           "Autorități publice, când există o obligație legală",
         ],

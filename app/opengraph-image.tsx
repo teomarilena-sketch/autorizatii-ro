@@ -76,7 +76,7 @@ export default function OpengraphImage() {
           }}
         >
           <div style={{ display: "flex" }}>
-            AFER · IGPR · ISU · ANRE · AGFR · ISO
+            AFER · IGPR · ISU · ANRE · AGFR · ISCIR · ISO
           </div>
           <div style={{ display: "flex", color: "#2DA8EC", fontWeight: 700 }}>
             autorizații.ro

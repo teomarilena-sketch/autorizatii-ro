@@ -8,7 +8,7 @@ import { POSTS } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog — ghiduri despre autorizări și licențiere",
   description:
-    "Ghiduri practice despre obținerea autorizațiilor în România: ISU, ANRE, AFER, IGPR, AGFR și certificări ISO — termene, documente și greșeli frecvente.",
+    "Ghiduri practice despre obținerea autorizațiilor în România: ISU, ANRE, AFER, IGPR, AGFR, ISCIR și certificări ISO — termene, documente și greșeli frecvente.",
   alternates: { canonical: "/blog" },
 };
 

@@ -6,6 +6,7 @@ const AUTHORITIES = [
   { short: "IGSU", full: "Inspectoratul General pentru Situații de Urgență" },
   { short: "ANRE", full: "Autoritatea Națională de Reglementare în Energie" },
   { short: "AGFR", full: "Asociația Generală a Frigotehniștilor din România" },
+  { short: "ISCIR", full: "Inspecția de Stat pentru Cazane, Recipiente sub Presiune și Instalații de Ridicat" },
   { short: "RENAR", full: "Asociația de Acreditare din România" },
 ];
 

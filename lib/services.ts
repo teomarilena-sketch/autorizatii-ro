@@ -3,6 +3,7 @@ import {
   Award,
   Flame,
   Fuel,
+  Gauge,
   ShieldAlert,
   Snowflake,
   TrainFront,
@@ -38,8 +39,8 @@ export type Service = {
 };
 
 /**
- * Cele 7 servicii. Descrierile sunt redactate din surse publice despre fiecare
- * autoritate emitentă (AFER, IGPR, IGSU, ANRE, AGFR, RENAR).
+ * Cele 8 servicii. Descrierile sunt redactate din surse publice despre fiecare
+ * autoritate emitentă (AFER, IGPR, IGSU, ANRE, AGFR, RENAR, ISCIR).
  */
 export const SERVICES: Service[] = [
   {
@@ -370,6 +371,58 @@ export const SERVICES: Service[] = [
     seoTitle: "Certificări ISO 9001, 14001, 45001 — implementare și audit de certificare",
     seoDescription:
       "Implementare și certificare ISO (9001, 14001, 45001, 27001, 50001) prin organisme acreditate RENAR: gap analysis, proceduri, instruire, asistență la audit.",
+  },
+  {
+    id: "iscir",
+    slug: "autorizatii-iscir",
+    icon: Gauge,
+    name: "Autorizații ISCIR — cazane, recipiente sub presiune și instalații de ridicat",
+    cardTitle: "Autorizații ISCIR",
+    short: "Cazane, recipiente sub presiune, macarale și instalații de ridicat",
+    description:
+      "Autorizarea operatorilor economici care montează, repară sau întrețin cazane, recipiente sub presiune și instalații de ridicat (macarale, poduri rulante, ascensoare, platforme), plus numirea responsabilului RSVTI și autorizarea personalului tehnic (sudori, operatori RSL).",
+    authority:
+      "Inspecția de Stat pentru Controlul Cazanelor, Recipientelor sub Presiune și Instalațiilor de Ridicat (ISCIR)",
+    legal: "Legea 64/2008 · Colecția de prescripții tehnice ISCIR (PT)",
+    deliverables: [
+      "Dosar de autorizare ISCIR (montare / reparare / întreținere)",
+      "Numire și autorizare RSVTI",
+      "Autorizare personal tehnic (sudori, operatori RSL)",
+    ],
+    weeks: [6, 14],
+    image: "",
+    imageAlt: "Cazane, recipiente sub presiune și instalații de ridicat",
+    intro:
+      "Echipamentele sub presiune și instalațiile de ridicat pot fi montate, reparate sau întreținute numai de operatori economici autorizați ISCIR, cu personal tehnic atestat. Firmele care dețin astfel de echipamente au, la rândul lor, obligația de a numi un responsabil RSVTI. Pregătim dosarul de autorizare și autorizarea personalului tehnic.",
+    whoNeedsIt: [
+      "Firme care montează, repară sau întrețin cazane și recipiente sub presiune",
+      "Firme care execută lucrări la instalații de ridicat (macarale, poduri rulante, ascensoare, platforme)",
+      "Operatori economici care dețin sau exploatează echipamente ISCIR și au nevoie de RSVTI",
+      "Producători și importatori de echipamente sub presiune sau de ridicat",
+    ],
+    documents: [
+      "Certificat constatator ONRC cu activitatea relevantă",
+      "Autorizații valabile pentru personalul tehnic (sudori, responsabili RSVTI / RSL)",
+      "Dotare tehnică și proceduri de lucru specifice tipului de echipament",
+      "Documentația tehnică a echipamentelor supuse autorizării",
+    ],
+    faq: [
+      {
+        q: "Ce este RSVTI și cine trebuie să îl aibă?",
+        a: "RSVTI (Responsabil cu Supravegherea și Verificarea Tehnică a Instalațiilor) este persoana desemnată să supravegheze din punct de vedere tehnic echipamentele ISCIR ale unei firme. Este obligatoriu pentru orice operator economic care deține sau exploatează astfel de echipamente, indiferent dacă le montează el însuși sau nu.",
+      },
+      {
+        q: "Ce tipuri de echipamente intră sub incidența ISCIR?",
+        a: "Cazane, recipiente sub presiune și conducte, instalații de ridicat (macarale, poduri rulante, ascensoare, platforme ridicătoare, elevatoare de șantier) și aparate consumatoare de combustibil. Fiecare categorie are propria prescripție tehnică (PT) cu cerințe specifice.",
+      },
+      {
+        q: "Cât durează autorizarea ISCIR?",
+        a: "Pentru o firmă cu personal tehnic deja autorizat, dosarul se pregătește în 3–6 săptămâni; dacă personalul trebuie mai întâi autorizat (sudori, RSVTI), adaugă timpul de instruire și examinare — de regulă procesul complet durează 6–14 săptămâni.",
+      },
+    ],
+    seoTitle: "Autorizații ISCIR — cazane, recipiente sub presiune, instalații de ridicat",
+    seoDescription:
+      "Autorizare ISCIR pentru montare, reparare și întreținere cazane, recipiente sub presiune și instalații de ridicat: dosar de autorizare, RSVTI, personal tehnic atestat.",
   },
 ];
 
