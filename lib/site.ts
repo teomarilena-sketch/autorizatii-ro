@@ -16,8 +16,8 @@ export const site = {
   description:
     "Consultanță pentru obținerea autorizațiilor și licențelor în România: AFER, IGPR, ISU, ANRE (energie și gaze), AGFR și certificări ISO. Proces digitalizat, un singur punct de contact.",
 
-  phone: "+40 3XX XXX XXX", // TODO: telefon real
-  phoneHref: "tel:+403XXXXXXXX", // TODO
+  phone: "+40 741 442 294",
+  phoneHref: "tel:+40741442294",
   email: "contact@autorizatii.ro",
   emailHref: "mailto:contact@autorizatii.ro",
   address: "București, România", // TODO: adresă completă
