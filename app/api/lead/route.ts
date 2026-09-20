@@ -75,7 +75,7 @@ export async function POST(request: Request) {
    *     },
    *     body: JSON.stringify({
    *       from: "lead@autorizatii.ro",
-   *       to: "contact@autorizatii.ro",
+   *       to: "contact@autorizații.ro",
    *       subject: `Lead nou — ${lead.projectType}`,
    *       text: JSON.stringify(lead, null, 2),
    *     }),

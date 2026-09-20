@@ -21,8 +21,11 @@ export const site = {
   // Vizibil doar pe /contact (nu pe homepage) — vezi app/contact/page.tsx.
   phoneAlt: "+40 727 070 777",
   phoneAltHref: "tel:+40727070777",
-  email: "contact@autorizatii.ro",
-  emailHref: "mailto:contact@autorizatii.ro",
+  // Adresa principală e pe domeniul cu diacritică — redirecționează (ImprovMX)
+  // spre contactmtmconsulting@gmail.com. Href în formă punycode pentru
+  // compatibilitate maximă cu clienții de email.
+  email: "contact@autorizații.ro",
+  emailHref: "mailto:contact@xn--autorizaii-oyd.ro",
   emailAlt: "contactmtmconsulting@gmail.com",
   emailAltHref: "mailto:contactmtmconsulting@gmail.com",
   address: "București, România", // TODO: adresă completă
