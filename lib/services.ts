@@ -301,8 +301,9 @@ export const SERVICES: Service[] = [
       "Registru echipamente și proceduri F-gaze",
     ],
     weeks: [4, 8],
-    image: "/img/servicii/agfr-unitati-exterioare.jpg",
-    imageAlt: "Unități exterioare de refrigerare montate pe peretele unei hale",
+    image: "/img/servicii/agfr-colaj.jpg",
+    imageAlt:
+      "Colaj cu instalații din domeniul AGFR: pompe de căldură, unități VRF pe acoperiș, instalație industrială de răcire și unitate de refrigerare comercială",
     intro:
       "Orice lucrare la instalații de frig, climatizare sau pompe de căldură care conțin gaze fluorurate cu efect de seră se poate face numai de firme și persoane certificate, conform Regulamentului (UE) 517/2014. Îți obținem certificatul de firmă și certificăm personalul.",
     whoNeedsIt: [
