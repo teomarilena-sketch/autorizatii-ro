@@ -206,8 +206,8 @@ export const SERVICES: Service[] = [
       "Asistență la evaluarea ANRE",
     ],
     weeks: [6, 12],
-    image: "/img/servicii/anre-electric.jpg",
-    imageAlt: "Tehnician lucrând la un tablou electric",
+    image: "/img/servicii/anre-electric-panou.jpg",
+    imageAlt: "Electrician văzut din spate, la un tablou electric industrial",
     intro:
       "Firmele care proiectează sau execută instalații electrice racordate la rețeaua de distribuție au nevoie de atestat ANRE, pe tipuri (A, B, C, D, E) în funcție de complexitatea lucrărilor. Pe lângă atestarea firmei, autorizăm individual și electricienii care execută lucrările. Pregătim dosarul de atestare și te asistăm la evaluare.",
     whoNeedsIt: [
