@@ -101,7 +101,7 @@ export default async function ServicePage({
         ]}
       >
         <div className="flex flex-col gap-3 sm:flex-row">
-          <ButtonLink href="/contact" variant="primary" size="lg">
+          <ButtonLink href="/contact" variant="primary" size="lg" className="shrink-0">
             Cere ofertă pentru {s.cardTitle}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </ButtonLink>

@@ -159,8 +159,8 @@ export const SERVICES: Service[] = [
       "Reprezentare la ISU județean",
     ],
     weeks: [6, 12],
-    image: "",
-    imageAlt: "Securitate la incendiu",
+    image: "/img/servicii/isu-hidrant.jpg",
+    imageAlt: "Hidrant de incendiu și dulap cu furtunuri de stingere pe fațada unei clădiri",
     intro:
       "Avizul de securitate la incendiu se obține înainte de construire sau amenajare, iar autorizația la finalizarea lucrărilor și înainte de punerea în funcțiune. Elaborăm scenariul de securitate la incendiu și gestionăm dosarul la Inspectoratul pentru Situații de Urgență.",
     whoNeedsIt: [
@@ -301,8 +301,8 @@ export const SERVICES: Service[] = [
       "Registru echipamente și proceduri F-gaze",
     ],
     weeks: [4, 8],
-    image: "",
-    imageAlt: "Frig, climatizare și pompe de căldură",
+    image: "/img/servicii/agfr-unitati-exterioare.jpg",
+    imageAlt: "Unități exterioare de refrigerare montate pe peretele unei hale",
     intro:
       "Orice lucrare la instalații de frig, climatizare sau pompe de căldură care conțin gaze fluorurate cu efect de seră se poate face numai de firme și persoane certificate, conform Regulamentului (UE) 517/2014. Îți obținem certificatul de firmă și certificăm personalul.",
     whoNeedsIt: [
@@ -394,8 +394,8 @@ export const SERVICES: Service[] = [
       "Autorizare personal tehnic (sudori, operatori RSL)",
     ],
     weeks: [6, 14],
-    image: "",
-    imageAlt: "Cazane, recipiente sub presiune și instalații de ridicat",
+    image: "/img/servicii/iscir-manometre.jpg",
+    imageAlt: "Manometre pe conductele izolate ale unei centrale termice",
     intro:
       "Echipamentele sub presiune și instalațiile de ridicat pot fi montate, reparate sau întreținute numai de operatori economici autorizați ISCIR, cu personal tehnic atestat. Firmele care dețin astfel de echipamente au, la rândul lor, obligația de a numi un responsabil RSVTI. Pregătim dosarul de autorizare și autorizarea personalului tehnic.",
     whoNeedsIt: [
