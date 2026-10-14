@@ -159,8 +159,9 @@ export const SERVICES: Service[] = [
       "Reprezentare la ISU județean",
     ],
     weeks: [6, 12],
-    image: "/img/servicii/isu-hidrant.jpg",
-    imageAlt: "Hidrant de incendiu și dulap cu furtunuri de stingere pe fațada unei clădiri",
+    image: "/img/servicii/isu-colaj.jpg",
+    imageAlt:
+      "Colaj cu echipamente de securitate la incendiu: hidrant și dulap cu furtunuri, indicator de evacuare, extinctor și buton de alarmă",
     intro:
       "Avizul de securitate la incendiu se obține înainte de construire sau amenajare, iar autorizația la finalizarea lucrărilor și înainte de punerea în funcțiune. Elaborăm scenariul de securitate la incendiu și gestionăm dosarul la Inspectoratul pentru Situații de Urgență.",
     whoNeedsIt: [
