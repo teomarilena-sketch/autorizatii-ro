@@ -112,8 +112,8 @@ export const SERVICES: Service[] = [
       "Atestate personal tehnic",
     ],
     weeks: [8, 16],
-    image: "",
-    imageAlt: "Sisteme de alarmare împotriva efracției",
+    image: "/img/servicii/igpr.jpg",
+    imageAlt: "Cameră video de supraveghere montată pe fațada unei clădiri",
     intro:
       "Proiectarea, instalarea, modificarea și întreținerea sistemelor de alarmare împotriva efracției se pot face numai de societăți licențiate de Inspectoratul General al Poliției Române. Pregătim dosarul de licențiere și atestarea personalului tehnic.",
     whoNeedsIt: [
